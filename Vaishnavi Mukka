@@ -1,0 +1,28 @@
+import numpy as np
+# eyematrix
+a=np.eye(3)
+print(a)
+
+import numpy as np
+a=np.array([1,2,3,4,5,6])
+print(a.shape)
+print(a.reshape(2,3))
+
+import numpy as np
+a = np.array([5, 2, 4, 3, 1])
+a.sort()
+print(a)
+
+import numpy as np
+a = np.array([
+    [[1, 2], [3, 4]],
+    [[5, 6], [7, 8]],
+    [[9, 10], [11, 12]]
+])
+
+print(a[1, :, :])
+
+import pandas as pd
+df=pd.DataFrame({'Name':['Ram',np.nan,'Sam']})
+df=df.fillna('unknown')
+print(df)
